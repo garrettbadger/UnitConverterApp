@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val stringInTextField = binding.cups.text.toString()
         val cups = stringInTextField.toDoubleOrNull()
         if (cups == null){
-            binding.cupsResult.text=""
+            binding.cupsResult.text="Converted Unit:"
             return
         }
         val selectedId = binding.cupsOptions.checkedRadioButtonId
